@@ -1,7 +1,7 @@
-#9 Faça um Programa que peça a temperatura em graus Fahrenheit, transforme e mostre a temperatura em graus Celsius.
-#C = 5 * ((F-32) / 9).
+#7 Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
+lado = float(input('Digite o lado do quadrado em cm: '))
+area = lado ** 2
+area2 = area * 2
 
-fah = float(input('Informe a temperatura graus em Fahrenheit: '))
-c =  5 * ((fah-32) / 9)
+print(f'A área do quadrado dado é {area:.1f}cm e o seu dobro é de {area2}cm')
 
-print(f'A temperatura em graus Celsius é de {c:.1f}')

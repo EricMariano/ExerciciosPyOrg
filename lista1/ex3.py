@@ -1,5 +1,7 @@
-#5
-m = float(input('Digite um número em metros para ser convertido em cm'))
-cm = m * 100 
+#3 Faça um Programa que peça dois números e imprima a soma.
+print('Lets Add up!')
+n1 = float(input('Enter a number: '))
+n2 = float(input('Enter another number: '))
+addition = n1 + n2
 
-print(f'{m}m em cm é equivalente a {cm}cm')
+print(f'{n1} + {n2} = {addition}')
