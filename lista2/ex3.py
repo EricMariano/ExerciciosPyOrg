@@ -3,14 +3,14 @@ while True:
     sexo = input('Informe seu sexo: (M ou F)')
 
     try:
-        sexo = str(sexo)
+        sexo = str(sexo).casefold
     except:
         ...
 
-    if sexo == 'F' or sexo == 'f':
+    if sexo == 'f':
         print('Feminino!')
         break
-    elif sexo == 'M' or sexo == 'm':
+    elif sexo == 'm':
         print('Masculino!')
         break
     else:
