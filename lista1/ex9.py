@@ -2,10 +2,10 @@
 # And Fahrenheit to Celsius, asking for the user what converter his want. C = 5 * ((F-32) / 9).
 
 # this question has been changed to a better practice.
-def celsius_to_fahrenheit(celsius):
+def celsiusToFahrenheit(celsius):
     return (celsius * 9/5) + 32
 
-def fahrenheit_to_celsius(fahrenheit):
+def fahrenheitToCelsius(fahrenheit):
     return 5 * ((fahrenheit - 32) / 9)
 
 def main():
@@ -18,14 +18,13 @@ def main():
     
     if option == "1":
         celsius = float(input("Digite a temperatura em graus Celsius: "))
-        fahrenheit = celsius_to_fahrenheit(celsius)
+        fahrenheit = celsiusToFahrenheit(celsius)
         print(f"{celsius:.2f}°C é equivalente a {fahrenheit:.2f}°F.")
     elif option == "2":
         fahrenheit = float(input("Digite a temperatura em graus Fahrenheit: "))
-        celsius = fahrenheit_to_celsius(fahrenheit)
+        celsius = fahrenheitToCelsius(fahrenheit)
         print(f"{fahrenheit:.2f}°F é equivalente a {celsius:.2f}°C.")
     else:
         print("Opção inválida. Por favor, reinicie o programa e tente novamente.")
-
 
 main()
