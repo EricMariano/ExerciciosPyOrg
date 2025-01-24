@@ -1,8 +1,13 @@
-#1
-n1 = float(input('Digite um número: '))
-n2 = float(input('Digite outro número: '))
+#1 Faça um programa que pergunte o preço de três produtos e 
+# informe qual produto mais barato.
+print('Cheap product')
+product1 = float(input('Enter the price of first product: '))
+product2 = float(input('Enter the price of second product: '))
+product3 = float(input('Enter the price of third product: '))
 
-if n1 > n2:
-    print(n1)
-else:
-    print(n2)
+def checkCheapestProduct():
+    productsList = [product1, product2, product3]
+    productsList.sort()
+    print(f'The cheapest product costs: {productsList[0]}')
+
+checkCheapestProduct()

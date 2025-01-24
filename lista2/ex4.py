@@ -1,14 +1,10 @@
-#4 Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
-while True:
-    letra = input('Digite uma letra: ').capitalize()
-
-    if letra.isdigit():
-        print('Digite uma letra, não um número.')
-        continue   
-    else:
-        if letra == 'A' or letra == 'E' or letra == 'I' or letra == 'O' or letra == 'U':
-            print(f'A letra {letra} é uma vogal.')
-            break
-        else:
-            print(f'A letra {letra} é uma consoante.')
-            break
+#4 Faça um programa que recebe o salário de um colaborador e o reajuste segundo o 
+# seguinte critério, baseado no salário atual:
+# salários até R$ 280,00 (incluindo) : aumento de 20%
+# salários entre R$ 280,00 e R$ 700,00 : aumento de 15%
+# salários entre R$ 700,00 e R$ 1500,00 : aumento de 10%
+# salários de R$ 1500,00 em diante : aumento de 5% Após o aumento ser realizado, informe na tela:
+# o salário antes do reajuste;
+# o percentual de aumento aplicado;
+# o valor do aumento;
+# o novo salário, após o aumento.

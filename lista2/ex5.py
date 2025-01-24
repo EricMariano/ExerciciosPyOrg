@@ -1,53 +1,17 @@
-#4. Faça um programa para a leitura de duas notas parciais de um aluno. 
-def is_number(n1):
-
-    try:
-        float(n1)
-        return True
-    except:
-        return False
-
-def isnumber(n2):
-
-    try:
-        float(n2)
-        return True
-    except:
-        return False   
-
-def codigo():
-
-    while True:
-        n1 = input('Informe sua nota da 1º unidade: ')
-        n1 = n1.replace(',','.')
-        
-        if is_number(n1):
-            n1 = float(n1)
-        else:
-            print('Digite um número. Reiniciando...')
-            continue
-
-        n2 = input('Informe sua nota da 2º unidade: ')
-        n2 = n2.replace(',','.')
-        
-        if isnumber(n2):
-            n2 = float(n2)
-        
-        soma = n1 + n2
-        
-        media = soma / 2
-
-        if media == 10:
-            print(f'Aprovado com distinção, sua média foi {media:.1f}. Parabéns!')
-            break
-        elif media >= 7:
-            print(f'Aprovado, sua média foi {media:.1f}. Parabéns!')
-            break
-        elif media < 7:
-            print(f'Reprovado, sua média foi {media:.1f}. Melhore.')
-            break
-        else:
-            print('Digite um número. Reiniciando...')
-            continue
-
-codigo()
+#5 Faça um programa para o cálculo de uma folha de pagamento, sabendo
+# que os descontos são do Imposto de Renda, que depende do salário bruto 
+# (conforme tabela abaixo) e 3% para o Sindicato e que o FGTS corresponde a 11% do Salário Bruto,
+# mas não é descontado (é a empresa que deposita). O Salário Líquido corresponde ao Salário Bruto
+# menos os descontos. O programa deverá pedir ao usuário o valor da sua hora e a quantidade de horas
+# trabalhadas no mês.
+# Desconto do IR:
+# Salário Bruto até 900 (inclusive) - isento
+# Salário Bruto até 1500 (inclusive) - desconto de 5%
+# Salário Bruto até 2500 (inclusive) - desconto de 10%
+# Salário Bruto acima de 2500 - desconto de 20% Imprima na tela as informações, dispostas conforme o exemplo abaixo. No exemplo o valor da hora é 5 e a quantidade de hora é 220.
+#         Salário Bruto: (5 * 220)        : R$ 1100,00
+#         (-) IR (5%)                     : R$   55,00  
+#         (-) INSS ( 10%)                 : R$  110,00
+#         FGTS (11%)                      : R$  121,00
+#         Total de descontos              : R$  165,00
+#         Salário Liquido                 : R$  935,00
