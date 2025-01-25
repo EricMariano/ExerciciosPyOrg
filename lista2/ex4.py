@@ -8,3 +8,29 @@
 # o percentual de aumento aplicado;
 # o valor do aumento;
 # o novo salário, após o aumento.
+
+def calcular_reajuste(salario):
+    if salario <= 280:
+        return 20
+    elif salario <= 700:
+        return 15
+    elif salario <= 1500:
+        return 10
+    else:
+        return 5
+    
+def exibir_informacoes(salario, percentual):
+    valor_aumento = salario * percentual / 100
+    novo_salario = salario + valor_aumento
+    print(f'Salário antes do reajuste: R$ {salario:.2f}')
+    print(f'Percentual de aumento aplicado: {percentual}%')
+    print(f'Valor do aumento: R$ {valor_aumento:.2f}')
+    print(f'Novo salário, após o aumento: R$ {novo_salario:.2f}')
+
+def main():
+    salario_atual = float(input('Digite o salário do colaborador: '))
+    percentual_aumento = calcular_reajuste(salario_atual)
+    exibir_informacoes(salario_atual, percentual_aumento)
+
+if __name__ == "__main__":
+    main()
